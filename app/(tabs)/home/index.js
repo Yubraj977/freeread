@@ -10,6 +10,7 @@ import NewsView from '../../../components/NewsView';
 
 export default function index() {
     return (
+        <ScrollView>
         <SafeAreaView className='px-2 mt-2'>
             {/* First top view for the app -------easy menus-------- */}
             <View className='flex justify-between flex-row '>
@@ -117,8 +118,12 @@ export default function index() {
             {/*  For the news view section*/}
             <View className='mt-2'>
                 <NewsView />
+                <NewsView />
+                <NewsView />
+                <NewsView />
             </View>
 
         </SafeAreaView>
+        </ScrollView>
     )
 }
